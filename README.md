@@ -7,7 +7,7 @@
 
 Algoritmo desenvolvido no âmbito acadêmico para a disciplina de Inteligência Artificial do [Centro de Educação Superior do Alto Vale do Itajaí (CEAVI/UDESC)](https://www.udesc.br/ceavi).
 
-#Autor
+# Autor
 - [**Leonardo Tadeu Jaques Steinke**](mailto:leonardosteinke1@gmail.com) - [LeonardoSteinke](https://github.com/LeonardoSteinke)
 
 # Sumário
@@ -22,6 +22,6 @@ O Problema a ser desenvolvido é uma Rede Neural para o de reconhecimento e clas
 ## [Dataset](#dataset)
 O Dataset para fazer a classificação pode ser de escolha do usuário que vai utilizar o sistema, mas como exemplo será utilizado o Dataset do [Kaggle](https://www.kaggle.com/) da competição [Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data)
 
-##[Técnica](#tecnica)
+## [Técnica](#tecnica)
 Utilização da Rede Neural CNN para reconhecer e classificar diferentes imagens
 
