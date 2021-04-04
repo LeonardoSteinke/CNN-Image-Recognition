@@ -37,13 +37,14 @@ Epocas = 50
 model=load_model('modelo'+str(Epocas)+'epocas.h5')
 test_imgs = ['teste\\{}'.format(i) for i in os.listdir(dirTeste)]
 
-ImagensParaAvaliar = 13
+ImagensParaAvaliar = 20
 
 X_teste, y_teste = readAndProcessImg(test_imgs[0:ImagensParaAvaliar])
 x = np.array(X_teste)
 test_datagen = ImageDataGenerator(rescale=1./255)
 i = 0
 text_labels = []
+
 plt.figure(figsize=(20,20))
 
 for batch in test_datagen.flow(x, batch_size=1):
