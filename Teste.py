@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from keras.models import load_model
 from keras.preprocessing.image import ImageDataGenerator
 
-dirTeste = 'C:\\CNNImageRecognition\\teste'
+dirTeste = 'teste'
 
 #Redimencionar as imagens
 imgX = 150
@@ -35,7 +35,7 @@ colunasExibicao = 5
 Epocas = 50
 
 model=load_model('modelo'+str(Epocas)+'epocas.h5')
-test_imgs = ['C:\\CNNImageRecognition\\teste\\{}'.format(i) for i in os.listdir(dirTeste)]
+test_imgs = ['teste\\{}'.format(i) for i in os.listdir(dirTeste)]
 
 ImagensParaAvaliar = 13
 

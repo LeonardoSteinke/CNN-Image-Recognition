@@ -9,8 +9,6 @@ Epocas = 50
 totalCachorros = 7000
 totalGatos = 7000
 
-colunasExibicao = 5
-
 import cv2 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -19,13 +17,10 @@ import os #Sistema Operacional
 import random
 import gc #Garbage Collector
 
-dirTreino = 'C:\\CNNImageRecognition\\treino'
-dirTeste = 'C:\\CNNImageRecognition\\teste'
+dirTreino = 'treino'
 
-treina_dog = ['C:\\CNNImageRecognition\\treino\\{}'.format(i) for i in os.listdir(dirTreino) if 'dog' in i] #Encontra as imagens de cachorros
-treina_cat = ['C:\\CNNImageRecognition\\treino\\{}'.format(i) for i in os.listdir(dirTreino) if 'cat' in i] #Encontra as imagens de gatos
-
-teste_imgs = ['C:\\CNNImageRecognition\\teste\\{}'.format(i) for i in os.listdir(dirTeste)] #Encontra o diretorio de teste
+treina_dog = ['treino\\{}'.format(i) for i in os.listdir(dirTreino) if 'dog' in i] #Encontra as imagens de cachorros
+treina_cat = ['treino\\{}'.format(i) for i in os.listdir(dirTreino) if 'cat' in i] #Encontra as imagens de gatos
 
 treino_img = treina_dog[:totalCachorros] + treina_cat[:totalGatos]
 random.shuffle(treino_img) #Embaralha
@@ -85,7 +80,6 @@ nTreino = len(X_treino)
 nval = len(X_val)
 
 batch_size = 32
-
 
 from keras import layers
 from keras import models
@@ -164,6 +158,6 @@ plt.title('Perda de treino e validação')
 plt.legend()
 plt.show()
 
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# >>> FIM da Parte de Treinamento
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>
+# >>> FIM Treinamento
+# >>>>>>>>>>>>>>>>>>>
