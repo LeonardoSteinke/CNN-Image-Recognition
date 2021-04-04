@@ -37,10 +37,9 @@ Epocas = 50
 model=load_model('modelo'+str(Epocas)+'epocas.h5')
 test_imgs = ['C:\\CNNImageRecognition\\teste\\{}'.format(i) for i in os.listdir(dirTeste)]
 
-ImagensParaAvaliar = 12
+ImagensParaAvaliar = 13
 
-#Now lets predict on the first ImagensParaAvaliar of the test set
-X_teste, y_teste = readAndProcessImg(test_imgs[0:ImagensParaAvaliar]) #y_test in this case will be empty.
+X_teste, y_teste = readAndProcessImg(test_imgs[0:ImagensParaAvaliar])
 x = np.array(X_teste)
 test_datagen = ImageDataGenerator(rescale=1./255)
 i = 0
