@@ -17,6 +17,7 @@ Algoritmo desenvolvido no âmbito acadêmico para a disciplina de Inteligência 
 * [Técnica](#tecnica)
 * [Resultados Obtidos](#resultados)
 * [Instruções para Uso do Software](#instrucoes)
+* [Vídeo](#video)
 
 ## [Problema](#problema)
 O Problema a ser desenvolvido é uma Rede Neural Convolucional para o de reconhecimento e classificação binária de imagens.
@@ -78,7 +79,9 @@ Para definir a quantidade de Épocas a serem treinadas deve-se alterar o valor d
 
 Para a classificação das imagens deve-se colocar todas as imagens que se que classificar dentro da pasta "teste" e no codigo fonte do arquivo "Teste.py" alterar as variaveis "ImagensParaAvaliar" para a quantidade de imagens a serem avaliadas e a variável "Epocas" para o valor do modelo de épocas que você quer utilizar
 
+## [Vídeo](#video)
 
+[Trabalho Implementação 75INC - Rede Neural Convolucional para classificação binária de imagens](https://www.youtube.com/watch?v=lgv-l8YUhV0)
 
 
 
