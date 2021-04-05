@@ -2,7 +2,7 @@
 """
 Created on Sun Apr  4 15:02:18 2021
 
-@author: leona
+@author: Leonardo Tadeu Jaques Steinke
 """
 
 import cv2 
